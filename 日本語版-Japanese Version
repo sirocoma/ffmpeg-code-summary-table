@@ -2,7 +2,6 @@
 ```
 ffmpeg -i "download.mp4" -vn -acodec copy "audio.mp4"
 ```
-
 **動画に指定した音声を上書きする**
 ```
 ffmpeg -i "out.mp4" -i "audio.mp4" -c:v copy -c:a aac -map 0:v:0 -map 1:a:0 "videooo.mp4"
